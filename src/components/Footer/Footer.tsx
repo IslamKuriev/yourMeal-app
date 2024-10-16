@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className={styles.footerMain}>
       <div>
-        <img src="/src/icons/footerLogo.png" alt="" />
+        <img src="/src/icons/footerLogo.png" alt="footerLogo" />
         <br />
         <span>© YouMeal, 2024</span>
       </div>
@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div>
         <div style={{ marginBottom: "10px" }}>Мы в соцсетях</div>
-        <img src="/src/icons/social.png" alt="" />
+        <img src="/src/icons/social.png" alt="social" />
       </div>
     </div>
   );
