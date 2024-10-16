@@ -1,0 +1,74 @@
+.product {
+  margin-top: 20px;
+  padding-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 268px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.3px solid rgb(172, 168, 168);
+}
+.product img {
+  width: 69px;
+  height: 58px;
+  border-radius: 8px;
+}
+
+.CartInfo {
+  margin-left: 10px;
+}
+.CartInfo div {
+  font-size: 16px;
+  line-height: 16.37px;
+  text-align: left;
+  color: #000000;
+}
+.CartInfo span {
+  font-size: 16px;
+  line-height: 16.37px;
+  text-align: left;
+  color: #B1B1B1;
+  font-weight: 400;
+}
+.CartInfo strong {
+  font-size: 16px;
+  line-height: 16.37px;
+  text-align: left;
+  color: #000000;
+}
+
+.btnOption {
+  margin-left: 55px;
+  background: #F2F2F3;
+  width: 84px;
+  height: 40px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.btnOption button {
+  border: none;
+}
+
+.cartLength {
+  background: #F2F2F3;
+  padding: 4px 20px;
+  border-radius: 10px;
+}
+
+.cartText {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
