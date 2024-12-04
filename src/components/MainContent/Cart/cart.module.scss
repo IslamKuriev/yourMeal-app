@@ -1,115 +1,114 @@
 $color: #000000;
 @mixin default {
-    font-size: 16px;
-    line-height: 16.37px;
-    text-align: left;
+  font-size: 16px;
+  line-height: 16.37px;
+  text-align: left;
 }
 .product {
-    margin-top: 20px; 
-    padding-bottom: 12px;
-    display: flex;
-    // width: 268px;
-    align-items: center;
-    border-bottom: 0.3px solid rgb(172, 168, 168);
-    img {
-        width: 69px;
-        height: 58px;
-        border-radius: 8px;
-    }
+  margin-top: 20px;
+  padding-bottom: 12px;
+  display: flex;
+  // width: 268px;
+  align-items: center;
+  border-bottom: 0.3px solid rgb(172, 168, 168);
+  img {
+    width: 69px;
+    height: 58px;
+    border-radius: 8px;
+  }
 }
 .CartInfo {
-margin-left: 10px;
-width: 150px;
-div {
-  @include default;
-    color: $color;
-}
-span {
-   @include default;
-    color: #B1B1B1;
-    font-weight: 400;
-}
-strong {
+  margin-left: 10px;
+  width: 150px;
+  div {
     @include default;
     color: $color;
-}
+  }
+  span {
+    @include default;
+    color: #b1b1b1;
+    font-weight: 400;
+  }
+  strong {
+    @include default;
+    color: $color;
+  }
 }
 .btnOption {
-// margin-left: 103px;
-background: #F2F2F3;
-width: 80px;
-height: 40px;
-border-radius: 12px;
-display: flex;
-justify-content: center;
-gap: 10px;
-align-items: center;
- button {
+  // margin-left: 103px;
+  background: #f2f2f3;
+  width: 80px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  button {
     border: none;
- }
+  }
 }
 .cartLength {
-    background: #F2F2F3;
-    padding: 4px 20px;
-    border-radius: 10px;
+  background: #f2f2f3;
+  padding: 4px 20px;
+  border-radius: 10px;
 }
 .cartText {
-font-size: 24px;
-font-weight: 600;
-line-height: 24px;
-text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
 }
 .totalBlock {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-    div {
-        font-size: 17.5px;
-        font-weight: 515;
-        line-height: 20.8px;
-        text-align: left;
-    }
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  div {
+    font-size: 17.5px;
+    font-weight: 515;
+    line-height: 20.8px;
+    text-align: left;
+  }
 }
 .design {
- background: #FF7020;
-font-size: 16px;
-font-weight: 400;
-line-height: 16px;
-color: #FFFFFF;
-border: none;
-border-radius: 12px;
-width: 268px;
-height: 40px;
-text-align: center;
-margin: 18px;
-cursor: pointer;
+  background: #ff7020;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  width: 268px;
+  height: 40px;
+  text-align: center;
+  margin: 18px;
+  cursor: pointer;
 }
 .modal {
-    padding: 3px;
-    margin-top: 20px;
-    width: 300px;
-    height: 100px;
-    border-radius: 8px;
-    background: #0bff6d;
-    color: #FFFFFF;
+  padding: 3px;
+  margin-top: 20px;
+  width: 300px;
+  height: 100px;
+  border-radius: 8px;
+  background: #0bff6d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  button {
+    border: none;
+    background: #f2f2f3;
+    color: #000000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    div {
-font-size: 22px;
-font-weight: 400;
-line-height: 24px;
-    }
-    button {
-        border: none;
-        background: #F2F2F3;
-        color: #000000;
-        display: flex;
-        padding: 2px 7px;
-        margin-left: 20px;
-        justify-content: end;
-        border-radius: 5px;
-        cursor: pointer;
-        
-    }
+    padding: 2px 7px;
+    margin-left: 20px;
+    justify-content: end;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }

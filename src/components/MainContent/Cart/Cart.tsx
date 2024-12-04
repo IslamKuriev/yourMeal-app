@@ -1,8 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
-import styles from "./cart.module.scss";
-import { RootState } from "../../../app/store";
-import { cleanCart, decrement, increment } from "../../../features/shopReducer";
-import { useState } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import styles from './cart.module.scss';
+import { RootState } from '../../../app/store';
+import { cleanCart, decrement, increment } from '../../../features/shopSlice';
+import { useState } from 'react';
 const Cart = () => {
   const cartEl = useSelector((state: RootState) => state.cartItems);
   const products = useSelector((state: RootState) => state.products);
@@ -30,7 +30,7 @@ const Cart = () => {
   };
   return (
     <div>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div className={styles.cartText}>Корзина</div>
         <span className={styles.cartLength}>{cartEl.length}</span>
       </div>
@@ -67,16 +67,10 @@ const Cart = () => {
           <div>Итого</div>
           <div>{totatPrice}₽</div>
         </div>
-        <button
-          className={styles.design}
-          onClick={handleModal}
-          disabled={!cartEl.length}
-        >
+        <button className={styles.design} onClick={handleModal} disabled={!cartEl.length}>
           Оформить заказ
         </button>
-        <div
-          style={{ display: "flex", alignItems: "center", paddingTop: "9px" }}
-        >
+        <div style={{ display: 'flex', alignItems: 'center', paddingTop: '9px' }}>
           <img src="/src/icons/freeEat.svg" alt="" /> Бесплатная доставка
         </div>
       </div>

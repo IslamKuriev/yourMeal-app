@@ -1,4 +1,4 @@
-import styles from "./footer.module.scss";
+import styles from './footer.module.scss';
 
 const Footer = () => {
   return (
@@ -9,11 +9,11 @@ const Footer = () => {
         <span>© YouMeal, 2024</span>
       </div>
       <div>
-        <div style={{ marginBottom: "5px" }}>Номер для заказа</div>
+        <div style={{ marginBottom: '5px' }}>Номер для заказа</div>
         <span>+7(930)833-**-**</span>
       </div>
       <div>
-        <div style={{ marginBottom: "10px" }}>Мы в соцсетях</div>
+        <div style={{ marginBottom: '10px' }}>Мы в соцсетях</div>
         <img src="/src/icons/social.png" alt="social" />
       </div>
     </div>

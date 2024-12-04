@@ -1,45 +1,45 @@
 $color: #000000;
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
-    padding: 5px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 5px;
+}
 .product {
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-    background: #FFFFFF;
-    flex-grow: 0;
-    // flex-basis: 33.3333%;
-    width: 300px;
-    height: 411px;;
-    border-radius: 18px;
-   div {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 24px;
-        text-align: left;
-        color: $color  
-    }
-   .price {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20.8px;
-        text-align: left;
-        color: $color;
-   }
-   .gram {
+  background: #ffffff;
+  flex-grow: 0;
+  // flex-basis: 33.3333%;
+  width: 300px;
+  height: 411px;
+  border-radius: 18px;
+  div {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: $color;
+  }
+  .price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+    color: $color;
+  }
+  .gram {
     font-size: 16px;
     font-weight: 600;
     line-height: 20.8px;
-    text-align: left;  
-    color: #B1B1B1;
-   }
-   button {
-    background: #F2F2F3;
+    text-align: left;
+    color: #b1b1b1;
+  }
+  button {
+    background: #f2f2f3;
     width: 285px;
     height: 40px;
     border-radius: 12px;
@@ -49,5 +49,5 @@ $color: #000000;
     font-weight: 400;
     margin-top: 10px;
     cursor: pointer;
-   }
+  }
 }

@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export interface Product {
   id: number;
@@ -32,104 +32,104 @@ const initialState: ShopState = {
     {
       id: 1,
       categoryId: 1,
-      name: "Мясная бомба",
+      name: 'Мясная бомба',
       price: 689,
       cal: 520,
-      image: "/src/assets/MeatBoom.png",
+      image: '/src/assets/MeatBoom.png',
     },
     {
       id: 2,
       categoryId: 1,
-      name: "Супер сырный",
+      name: 'Супер сырный',
       price: 520,
       cal: 512,
-      image: "/src/assets/SuperCheese.png",
+      image: '/src/assets/SuperCheese.png',
     },
     {
       id: 3,
       categoryId: 1,
-      name: "Сытный",
+      name: 'Сытный',
       price: 639,
       cal: 580,
-      image: "/src/assets/Satisfying.png",
+      image: '/src/assets/Satisfying.png',
     },
     {
       id: 4,
       categoryId: 1,
-      name: "Тяжелый удар",
+      name: 'Тяжелый удар',
       price: 480,
       cal: 470,
-      image: "/src/assets/HardBlow.png",
+      image: '/src/assets/HardBlow.png',
     },
     {
       id: 5,
       categoryId: 2,
-      name: "Домашний хот-дог",
+      name: 'Домашний хот-дог',
       price: 290,
       cal: 250,
-      image: "/src/assets/Homemeda.png",
+      image: '/src/assets/Homemeda.png',
     },
     {
       id: 6,
       categoryId: 2,
-      name: "Жгучий хот-дог",
+      name: 'Жгучий хот-дог',
       price: 239,
       cal: 245,
-      image: "/src/assets/hotGog.png",
+      image: '/src/assets/hotGog.png',
     },
     {
       id: 7,
       categoryId: 2,
-      name: "Классический хот-дог",
+      name: 'Классический хот-дог',
       price: 220,
       cal: 215,
-      image: "/src/assets/ClassicHotDog.png",
+      image: '/src/assets/ClassicHotDog.png',
     },
     {
       id: 8,
       categoryId: 3,
-      name: "Начос",
+      name: 'Начос',
       price: 250,
       cal: 220,
-      image: "/src/assets/Hachos.png",
+      image: '/src/assets/Hachos.png',
     },
     {
       id: 9,
       categoryId: 3,
-      name: "Картошка фри",
+      name: 'Картошка фри',
       price: 245,
       cal: 180,
-      image: "/src/assets/Free.png",
+      image: '/src/assets/Free.png',
     },
     {
       id: 10,
       categoryId: 3,
-      name: "Луковые кольца",
+      name: 'Луковые кольца',
       price: 230,
       cal: 160,
-      image: "/src/assets/Rings.png",
+      image: '/src/assets/Rings.png',
     },
   ],
   categories: [
     {
       id: 0,
-      name: "Все продукты",
-      image: "/src/icons/combo",
+      name: 'Все продукты',
+      image: '/src/icons/combo',
     },
     {
       id: 1,
-      name: "Бургеры",
-      image: "/src/icons/burgerCategory",
+      name: 'Бургеры',
+      image: '/src/icons/burgerCategory',
     },
     {
       id: 2,
-      name: "Хот-доги",
-      image: "/src/icons/hotdogCategory",
+      name: 'Хот-доги',
+      image: '/src/icons/hotdogCategory',
     },
     {
       id: 3,
-      name: "Закуски",
-      image: "/src/icons/onionCategory",
+      name: 'Закуски',
+      image: '/src/icons/onionCategory',
     },
   ],
   cartItems: [
@@ -151,8 +151,8 @@ const initialState: ShopState = {
   ],
 };
 
-export const shopReducer = createSlice({
-  name: "youMeal",
+export const shopSlice = createSlice({
+  name: 'youMeal',
   initialState,
   reducers: {
     addToCart: (state, action) => {
@@ -177,6 +177,5 @@ export const shopReducer = createSlice({
   },
 });
 
-export const { addToCart, increment, decrement, cleanCart } =
-  shopReducer.actions;
-export const ShopReducer = shopReducer.reducer;
+export const { addToCart, increment, decrement, cleanCart } = shopSlice.actions;
+export const ShopSlice = shopSlice.reducer;

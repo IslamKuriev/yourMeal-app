@@ -1,8 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
-import styles from "./product.module.scss";
-import { RootState } from "../../../app/store";
-import { useParams } from "react-router-dom";
-import { addToCart } from "../../../features/shopReducer";
+import { useDispatch, useSelector } from 'react-redux';
+import styles from './product.module.scss';
+import { RootState } from '../../../app/store';
+import { useParams } from 'react-router-dom';
+import { addToCart } from '../../../features/shopSlice';
 const Product = () => {
   const { categoryId } = useParams();
   const products = useSelector((state: RootState) =>
@@ -10,7 +10,7 @@ const Product = () => {
       if (!categoryId) return true;
 
       return product.categoryId === Number(categoryId);
-    })
+    }),
   );
   const cartEl = useSelector((state: RootState) => state.cartItems);
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const Product = () => {
         id: cartEl.length + 1,
         productId: id,
         amount: 1,
-      })
+      }),
     );
   };
   return (
@@ -36,7 +36,7 @@ const Product = () => {
             <br />
             <div className={styles.gram}>{product.cal}г</div>
             <button onClick={() => !isInCart && handleAddToCart(product.id)}>
-              {isInCart ? "Уже в корзине" : "Добавьте в корзину"}
+              {isInCart ? 'Уже в корзине' : 'Добавьте в корзину'}
             </button>
           </div>
         );

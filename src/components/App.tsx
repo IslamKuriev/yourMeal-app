@@ -1,9 +1,9 @@
-import { Route, Routes } from "react-router-dom";
-import Categories from "./Categories/Categories";
-import Header from "./Header/Header";
-import Cart from "./MainContent/Cart/Cart";
-import Product from "./MainContent/Product/Product";
-import Footer from "./Footer/Footer";
+import { Route, Routes } from 'react-router-dom';
+import Categories from './Categories/Categories';
+import Header from './Header/Header';
+import Cart from './MainContent/Cart/Cart';
+import Product from './MainContent/Product/Product';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
